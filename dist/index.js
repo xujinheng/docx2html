@@ -17273,7 +17273,9 @@ var Converter = function () {
 	}], [{
 		key: 'asCssID',
 		value: function asCssID(a) {
-			return a.replace(/\s+/g, '_');
+			var id = a.replace(/\s+/g, '_');
+      if (id.match(/^\d/)) id = 'digit-' + id;
+      return id;
 		}
 	}, {
 		key: 'addClass',
