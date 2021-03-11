@@ -19856,7 +19856,7 @@ var Properties = function (_Style$CellProperties) {
 			    level = -1,
 			    t;
 			for (var i = 0; i < 12; i++) {
-				if (x.charAt(i) == '1') {
+				if (x[i] == '1') {
 					names.push(t = _table2.default.TableStyles[i]);
 					if ((t = PrioritiziedStyles.indexOf(t)) > level) level = t;
 				}
@@ -20023,7 +20023,7 @@ var Properties = function (_Style$RowProperties) {
 			    level = -1,
 			    t;
 			for (var i = 0; i < 12; i++) {
-				if (x.charAt(i) == '1') {
+				if (x[i] == '1') {
 					names.push(t = _table2.default.TableStyles[i]);
 					if ((t = PrioritiziedStyles.indexOf(t)) > level) level = t;
 				}
